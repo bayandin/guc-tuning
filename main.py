@@ -103,7 +103,7 @@ def parse_pgbench_initialize_output(output: str) -> Dict[str, float]:
 
 DIMENTIONS = [s[0] for s in SPACE]
 X0 = [s[1] for s in SPACE]
-TIMEOUT = 120
+TIMEOUT = 200
 
 @use_named_args(DIMENTIONS)
 def pgbench(**options):
